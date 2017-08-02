@@ -33,7 +33,7 @@ class BookController extends Controller
      */
     public function index(Request $request)
     {
-        return $this->book->paginate(10, $request->input('page'), $column = ['*'], '', $request->input('search'));
+        return $this->book->paginate(2, $request->input('page'), $column = ['*'], '', $request->input('search'));
     }
 
     /**
